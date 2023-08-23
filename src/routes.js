@@ -17,8 +17,8 @@ routes.post("/sonhos", async (request, response) => {
 });
 
 routes.get("/sonhos", async (request, response) => {
-    const sonhos = await prisma.sonhos.findMany();
-    return response.status(200).json(sonhos);
+    const sonhos = await prisma.sonhos.findMany()
+    return response.status(200).json(sonhos)
 })
 
 routes.put("/sonhos", async (request, response) => {
